@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parabolic Strength — Personal Training</title>
+  <meta name="description" content="Personal training built around you. Strength coaching, programming, and accountability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo"><span class="logo-mark"></span>PARABOLIC<span>STRENGTH</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="book.html">Book</a>
+      <a href="blog.html">Blog</a>
+      <a href="book.html" class="nav-cta">Start Training</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-video-wrap">
+      <!-- Generated B&W training backdrop; replaced automatically if assets/hero.mp4 exists -->
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="logo-mark hero-mark"></span>
+      <p class="hero-kicker">Personal Training &amp; Strength Coaching</p>
+      <h1 class="hero-title">PARABOLIC<br>STRENGTH</h1>
+      <p class="hero-sub">Train with intent. Build strength that lasts.</p>
+      <div class="hero-actions">
+        <a href="book.html" class="btn btn-accent">Book a Session</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <span class="hero-scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about has-deco" id="about">
+    <span class="deco-sphere about-sphere"></span>
+    <div class="container about-grid">
+      <div class="about-photo">
+        <!-- Replace with your photo: assets/about.jpg -->
+        <img src="assets/about.jpg" alt="Tyler — Personal Trainer"
+             onerror="this.parentElement.classList.add('photo-placeholder'); this.remove();">
+      </div>
+      <div class="about-text">
+        <p class="section-kicker">About Me</p>
+        <h2 class="section-title">Hi, I'm Tyler.</h2>
+        <p>I'm a personal trainer who believes strength training should be simple, structured, and built around your life — not the other way around.</p>
+        <p>Whether you're stepping into the gym for the first time or chasing new numbers on the bar, my job is to give you a clear plan, coach your technique, and hold you accountable every step of the way.</p>
+        <p>No gimmicks. No guesswork. Just consistent, progressive training that works.</p>
+        <a href="book.html" class="btn btn-accent">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials has-deco" id="testimonials">
+    <span class="deco-sphere testimonials-sphere"></span>
+    <div class="container">
+      <p class="section-kicker">Testimonials</p>
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="testimonial-carousel">
+        <button class="carousel-btn prev" id="testimonialPrev" aria-label="Previous testimonials">&#8592;</button>
+        <div class="testimonial-track" id="testimonialTrack">
+          <figure class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">New Lifter</span>
+            <blockquote>I've never felt stronger or more confident in the gym. Tyler breaks everything down so it actually makes sense.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">S</span>
+              <span class="testimonial-name">Sarah M.<em>Training for 8 months</em></span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card featured">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">+40kg Squat</span>
+            <blockquote>Added 40kg to my squat in six months. The programming is dialled in and the coaching keeps me honest.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">J</span>
+              <span class="testimonial-name">James R.<em>Training for 6 months</em></span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">2 Years In</span>
+            <blockquote>I used to dread training. Now it's the best part of my week. Couldn't recommend Tyler more.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">P</span>
+              <span class="testimonial-name">Priya K.<em>Training for 2+ years</em></span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">-15kg</span>
+            <blockquote>I work rotating shifts and thought consistent training was impossible. Tyler builds the plan around my roster, not the other way round.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">M</span>
+              <span class="testimonial-name">Marcus T.<em>Training for 1 year</em></span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">First Pull-Up</span>
+            <blockquote>Went from zero to five strict pull-ups. Every session has a purpose and you can feel the progress week to week.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">E</span>
+              <span class="testimonial-name">Elena V.<em>Training for 10 months</em></span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <span class="testimonial-stat">Pain-Free</span>
+            <blockquote>After years of back pain I'd written off lifting completely. At 52 I'm deadlifting again — pain-free and stronger than I was at 40.</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar">D</span>
+              <span class="testimonial-name">Dave H.<em>Training for 18 months</em></span>
+            </figcaption>
+          </figure>
+        </div>
+        <button class="carousel-btn next" id="testimonialNext" aria-label="Next testimonials">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band has-deco">
+    <span class="deco-sphere cta-sphere"></span>
+    <div class="container">
+      <h2>Ready to get started?</h2>
+      <a href="book.html" class="btn btn-light">Book Your First Session</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <span class="logo-full footer-brand"></span>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="book.html">Book</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Parabolic Strength. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/hero-bg.js"></script>
+</body>
+</html>
