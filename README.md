@@ -13,10 +13,11 @@ A simple static website. No build step — open `index.html` in a browser, or ho
 1. **Hero video** — put your video at `assets/hero.mp4`. Any color footage works; CSS renders it black & white. (Optional: `assets/hero-poster.jpg` as a loading still.)
 2. **Your photo** — put it at `assets/about.jpg` and rewrite the About Me text in `index.html`.
 3. **Testimonials** — replace the three placeholder quotes in `index.html`.
-4. **Google Calendar booking**:
+4. **Booking**: the Book page has a built-in booking widget (session type → day → time → details). Submitting opens Google Calendar with the session pre-filled for the client. Adjust available hours in `HOURS` at the top of `js/booking.js`.
+   To switch to real Google Calendar appointment scheduling later:
    - In Google Calendar: **Create → Appointment schedule**, set your available hours.
    - Open the schedule → **Share** → copy the booking page link.
-   - Paste it into `BOOKING_URL` at the top of `js/main.js`.
+   - Paste it into `BOOKING_URL` at the top of `js/main.js` — the widget is replaced by the official embed automatically.
 5. **Blog posts** — the cards in `blog.html` are placeholders; duplicate a card per post.
 
 ## Styling
